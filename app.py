@@ -1,14 +1,13 @@
-print("Hello")
-print("ohayo")
-print("konnitiha")
-print("目つき悪")
-print("ほえー")
-
-from flask import Flask
+from flask import Flask, url_for
 app = Flask(__name__)
 @app.route("/")
 def home():
-    return "I'm a Flask app!"
+    return f"""
+    <h1>I'm a Flask app!</h1>
+    <a href="{url_for('kaikei')}">
+      <button style="padding:10px 20px; font-size:16px;">入出金一覧を見る</button>
+    </a>
+    """
 
 KAIKEI_DATA = [
     {"date": "2026-10-05", "kind": "収入", "item": "会費", "amount": 3000},
