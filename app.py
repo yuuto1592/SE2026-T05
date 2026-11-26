@@ -1,6 +1,7 @@
 print("Hello")
 print("ohayo")
 print("konnitiha")
+print("目つき悪")
 
 from flask import Flask
 app = Flask(__name__)
