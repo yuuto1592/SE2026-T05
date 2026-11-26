@@ -1,6 +1,6 @@
 print("Hello")
 print("ohayo")
-print("konnnitiha")
+print("konnitiha")
 
 from flask import Flask
 app = Flask(__name__)
